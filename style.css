@@ -1,0 +1,62 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap'); /*Krona One*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /*Montserrat*/
+
+* { /*Elimina las características que el código hace por defecto*/
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background: #000000;
+    color:#F6F6F6; /*Color de letras*/
+    height: 100vh; /*vh: Viewport Height se refiere al porcentaje de la pantalla que ocupa en altura (height)*/
+    box-sizing: border-box;
+}
+
+.enfoque-titulo {
+    color: #22D4FD;
+}
+
+.texto-centrado {
+    display: flex;
+    align-items: center; /*Alinea en el centro los elementos de .texto-centrado*/
+    margin: 15% 20%;
+    justify-content: space-between;
+}
+
+.presentacion-texto {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /*Necesita flexbox para luego poder usar gap*/
+}
+
+.título {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+
+.párrafo-presentación {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.división-enlaces {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones-enlaces {
+    width: 280px;
+    background-color: #22D4FD;
+    color:#000000;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600; /*SemiBold*/
+    text-decoration: none; /*Le saca el subrayado de un hipervínculo*/
+}
