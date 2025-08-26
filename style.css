@@ -68,4 +68,11 @@ body {
     font-size: 24px;
     font-weight: 600; /*SemiBold*/
     text-decoration: none; /*Le saca el subrayado de un hipervínculo*/
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.botones-enlaces:hover {
+    background-color: #272727;
+    transition: background-color 100ms ease-in-out;
 }
