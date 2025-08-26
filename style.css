@@ -43,18 +43,27 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+.título-enlaces {
+    font-size: 24px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+}
+
 .división-enlaces {
     display: flex;
     justify-content: space-between;
+    flex-direction: column; /*Orden y dirección de los elementos afectados por flex*/
+    align-items: center;
+    gap: 32px 0;
 }
 
 .botones-enlaces {
-    width: 280px;
-    background-color: #22D4FD;
-    color:#000000;
+    width: 378px;
+    color: #F6F6F6;
     text-align: center;
     padding: 21.5px 0;
-    border-radius: 16px;
+    border: 2px solid #22D4FD; /*Grosor, estilo, color*/
+    border-radius: 8px;
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 600; /*SemiBold*/
