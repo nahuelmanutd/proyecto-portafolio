@@ -2,7 +2,7 @@
 
 Este es un proyecto de un portafolio interactivo con un texto e imagen centrados, dos pestañas seleccionables en el encabezado y un pie de página simple.
 
-![Página en PC.](assets\captura-pc.png)
+![Página en PC.](https://github.com/nahuelmanutd/proyecto-portafolio/blob/main/assets/captura-pc.png)
 
 ### Detalles:
 
@@ -10,7 +10,7 @@ Esta página tiene dos botones funcionales con sus respectivas imágenes, al pas
 
 La página está hecha para adaptarse a diferentes resoluciones, por lo que puede ser accedida por otros dispositivos como un teléfono celular.
 
-![Página en celular.](assets\captura-celular.png)
+![Página en celular.](https://github.com/nahuelmanutd/proyecto-portafolio/blob/main/assets/captura-celular.png)
 
 ### Herramientas utilizadas:
 
