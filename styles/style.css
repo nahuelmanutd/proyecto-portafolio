@@ -29,7 +29,7 @@
 .header-menú-link {
     font-family: var(--fuente-montserrat);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem; /*Esta unidad de medida es relativa, esto significa que como no es absoluta no se fuerza constantemente a no cambiar.*/
     color:var(--celeste-principal);
     text-decoration: none;
 }
@@ -39,22 +39,23 @@
     align-items: center; /*Alinea en el centro los elementos de .texto-centrado*/
     padding: 6% 15%;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .presentacion-texto {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px; /*Necesita flexbox para luego poder usar gap*/
 }
 
 .título {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fuente-krona-one);
 }
 
 .párrafo-presentación {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
     font-weight: 400;
 }
@@ -78,20 +79,20 @@ body {
 }
 
 .título-enlaces {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-krona-one);
     font-weight: 400;
 }
 
 .botones-enlaces {
-    width: 378px;
+    width: 50%;
     color: var(--blanco-principal);
     text-align: center;
     padding: 21.5px 0;
     border: 2px solid var(--celeste-principal); /*Grosor, estilo, color*/
     border-radius: 8px;
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600; /*SemiBold*/
     text-decoration: none; /*Le saca el subrayado de un hipervínculo*/
     display: flex;
@@ -104,12 +105,32 @@ body {
     transition: background-color 100ms ease-in-out;
 }
 
+.imagen-byn {
+    width: 50%; /*Hace que tome el 50% de la pantalla adaptándose dependiendo de la resolución.*/
+}
+
 .footer {
     font-family: var(--fuente-montserrat);
     font-weight: 400px;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--negro-principal);
     background-color: var(--celeste-principal);
     text-align: center;
     padding: 24px 0;
+}
+
+@media(max-width: 1250px) {
+    .texto-centrado {
+        flex-direction: column-reverse; /*Cuando el largo de la pantalla baje de 1250px todo se va a ver en una columna.*/
+        padding: 10%;
+    }
+    .presentacion-texto {
+        width: auto;
+    }
+    .header {
+        padding: 10%;
+    }
+    .header-menú {
+        justify-content: center;
+    }
 }
